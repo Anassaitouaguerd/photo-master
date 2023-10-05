@@ -1,10 +1,12 @@
   /* Réinitialisation des styles par défaut */
+  
   body, h1, h2, h3,ul, li, p, form {
     margin: 0;
     padding: 10px;
 }
 
 /* Styles généraux */
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -14,10 +16,30 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    text-align: center;
+}
+
+.container a{
+    padding: 14px 16px;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+.container a:hover{
+    background-color: #c07cf4;
+    color: #f0f0f0;
+    box-shadow: 2px 2px 2px #2e2535;
+}
+
+.container p{
+    padding: 10px;
+    padding-bottom: 50px;
+    text-align: center;
 }
 
 header {
-    background-color: #333;
+    background-color: #56138a;
     color: #fff;
     padding: 20px 0;
     text-align: center;
@@ -42,20 +64,22 @@ nav li {
 
 nav a {
     text-decoration: none;
-    padding: 14px 16px;
     color: #fff;
     font-weight: bold;
-    border-radius: 10px;
 }
-nav a:hover {
-   background-color:#fff;
-   color: #333;
+
+nav a:hover{
+    background-color: #c07cf4;
+    color: #f0f0f0;
+    box-shadow: 2px 2px 2px #171717;
 }
+
 
 main {
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     padding: 40px 0;
+    padding-bottom: 150px;
 }
 
 section {
@@ -69,31 +93,26 @@ h2 {
 }
 
 /* Styles de bouton */
+
 .btn {
     display: inline-block;
     padding: 10px 20px;
     background-color: #333;
     color: #fff;
     text-decoration: none;
+    text-align: center;
     border-radius: 5px;
     font-weight: bold;
 }
 
-.container a:hover{
-   
-    background-color: #838181cb;
-    color: #333;
-}
-.container p{
-    padding: 10px;
-}
-
 /* Styles des services */
+
 .services-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 .serv {
     text-align: center;
 }
@@ -109,28 +128,27 @@ h2 {
     transform: scale(1.1);
 }
 
-
-
 .blog-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
 .page img{
-   width: 300px;
-    height: auto;
+    width: 300px;
+    height: 250px;
     border-radius: 10px;
     transition: transform 0.3s ease;
 }
+
 .page {
     text-align: center;
 }
 
-
-
 .blog-grid img:hover {
     transform: scale(1.1);
 }
+
 .page a {
     padding: 5px;
     padding-bottom: 10px;
@@ -141,18 +159,109 @@ h2 {
     border-radius: 10px;
    
 }
+
 .page a:hover{
     background-color: #56138a;
     color:#f0f0f0;
-    box-shadow: 5px 2px 2px #000000;
+    box-shadow: 2px 2px 2px #56138a;
 }
 
+.more {
+    text-align: center;
+}
+
+.more img{
+     padding: 14px;
+     width: 300px;
+     height: auto;
+     border-radius: 10px;
+     transition: transform 0.3s ease;
+ }
+
+ .more img:hover{
+    transform: scale(1.1);
+ }
+
+ .more h1{
+    margin: auto;
+ }
+
+ .more h2{
+    margin: auto;
+ }
+
+.more p{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.more2 {
+    text-align: center;
+}
+
+.more2 img{
+     padding: 14px;
+     width: 300px;
+     height: auto;
+     border-radius: 10px;
+     transition: transform 0.3s ease;
+ }
+
+ .more2 img:hover{
+    transform: scale(1.1);
+ }
+
+ .more2 h1{
+    margin: auto;
+ }
+
+ .more2 h2{
+    margin: auto;
+ }
+
+.more2 p{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+.more3 {
+    text-align: center;
+}
+
+.more3 img{
+     padding: 14px;
+     width: 300px;
+     height: auto;
+     border-radius: 10px;
+     transition: transform 0.3s ease;
+ }
+
+ .more3 img:hover{
+    transform: scale(1.1);
+ }
+
+ .more3 h1{
+    margin: auto;
+ }
+
+ .more3 h2{
+    margin: auto;
+ }
+
+.more3 p{
+    text-align: center;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
 
 /* Styles du formulaire de contact */
+
 form label, form textarea, form input, form button {
+    margin: auto;
     display: block;
     margin-bottom: 20px;
-    width: 100%;
+    width: 50%;
+    border-radius: 8px;
 }
 
 form textarea {
@@ -163,11 +272,18 @@ form button {
     background-color: #333;
     color: #fff;
     padding: 10px;
-    border: none;
+    border-radius: 8px;
     cursor: pointer;
 }
 
+form button:hover{
+    background-color: #c07cf4;
+    color: #f0f0f0;
+    box-shadow: 2px 2px 2px #56138a;
+}
+
 /* Styles de pied de page */
+
 footer {
     background-color: #333;
     color: #fff;
@@ -176,6 +292,7 @@ footer {
 }
 
 /* Styles responsives */
+
 @media screen and (max-width: 768px) {
     header h1 {
         font-size: 24px;
