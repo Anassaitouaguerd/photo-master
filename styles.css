@@ -1,5 +1,5 @@
   /* Réinitialisation des styles par défaut */
-  
+
   body, h1, h2, h3,ul, li, p, form {
     margin: 0;
     padding: 10px;
@@ -23,6 +23,7 @@ body {
     padding: 14px 16px;
     color: #fff;
     border-radius: 10px;
+    transition: transform 0.4s ease;
     
 }
 
@@ -50,7 +51,9 @@ header h1 {
     font-size: 36px;
     margin-bottom: 10px;
 }
-
+nav{
+    display: grid;
+}
 nav ul {
     list-style: none;
     text-align: center;
@@ -63,6 +66,7 @@ nav li {
 }
 
 nav a {
+    
     text-decoration: none;
     color: #fff;
     font-weight: bold;
@@ -128,10 +132,11 @@ h2 {
     transform: scale(1.1);
 }
 
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+.blog-grid{
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: space-evenly;
 }
 
 .page img{
@@ -143,6 +148,7 @@ h2 {
 
 .page {
     text-align: center;
+    margin-top: 50px;
 }
 
 .blog-grid img:hover {
@@ -297,8 +303,14 @@ footer {
     header h1 {
         font-size: 24px;
     }
-
+    .blog-grid{
+        display: flex;
+    }
+    nav {
+        display: flex;
+    }
     nav li {
+        display: flex;
         margin-right: 10px;
     }
 
